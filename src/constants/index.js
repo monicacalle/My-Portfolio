@@ -55,10 +55,10 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+  // {
+  //   name: "TypeScript",
+  //   icon: typescript,
+  // },
   {
     name: "React JS",
     icon: reactjs,
@@ -93,9 +93,10 @@ const experiences = [
   {
     title: "React.js Developer",
     company_name: "Enerlink",
-    icon: starbucks,
+    country: "Chile",
+    icon: "",
     iconBg: "#383E56",
-    date: "April 2021 - October 2021",
+    date: "April 2023 - October 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -106,7 +107,8 @@ const experiences = [
   {
     title: "Teacher Assistant",
     company_name: "4Geeks Academy",
-    icon: tesla,
+    country: "Chile",
+    icon: "",
     iconBg: "#E6DEDD",
     date: "Jun 2021 - April 2023",
     points: [
