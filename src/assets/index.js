@@ -32,6 +32,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import iphone15 from "./iphone15.png";
 import teslo from "./teslo.png";
+import journalApp from "./journalApp.png";
 
 export {
   logo,
@@ -65,4 +66,5 @@ export {
   next,
   iphone15,
   teslo,
+  journalApp,
 };

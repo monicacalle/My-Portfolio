@@ -13,6 +13,7 @@ import {
   next,
   iphone15,
   teslo,
+  journalApp,
 } from "../assets";
 
 export const navLinks = [
@@ -143,12 +144,33 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Journal App",
+    description:
+      "In this application, you can create, update, and delete notes as needed. You can create your own user account, and Google authentication is available for that purpose. Additionally, you have the option to attach images to your notes if desired.",
+    tags: [
+      {
+        name: "Reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MUI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: journalApp,
+    source_code_link: "https://github.com/monicacalle/Journal-app-using-MUI",
+  },
+  {
     name: "iPhone 15 page",
     description:
       "Recreate the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects. From custom animations to animated 3D models.",
     tags: [
       {
-        name: "react",
+        name: "Reactjs",
         color: "blue-text-gradient",
       },
       {
@@ -156,51 +178,31 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
     image: iphone15,
     source_code_link: "https://github.com/monicacalle/iphone15-page-clone",
   },
+
   {
-    name: "teslo shop",
+    name: "Teslo Shop",
     description:
       "Web application as a clone from tesla shop made with Next js.",
     tags: [
       {
-        name: "react",
+        name: "Reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "nextjs",
+        name: "Nextjs",
         color: "pink-text-gradient",
       },
     ],
     image: teslo,
     source_code_link: "https://github.com/",
   },
-  // {
-  //   name: "Trip Guide",
-  //   description:
-  //     "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-  //   tags: [
-  //     {
-  //       name: "nextjs",
-  //       color: "blue-text-gradient",
-  //     },
-  //     {
-  //       name: "supabase",
-  //       color: "green-text-gradient",
-  //     },
-  //     {
-  //       name: "css",
-  //       color: "pink-text-gradient",
-  //     },
-  //   ],
-  //   image: tripguide,
-  //   source_code_link: "https://github.com/",
-  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
