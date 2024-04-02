@@ -1,12 +1,12 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
+import { toast, Bounce } from "react-toastify";
 
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import { github } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -15,6 +15,19 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
+  const notify = (message) =>
+    toast(message, {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
 
   const [loading, setLoading] = useState(false);
 
@@ -48,7 +61,7 @@ const Contact = () => {
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          notify("Thank you 😃. I will get back to you as soon as possible .");
 
           setForm({
             name: "",
@@ -60,7 +73,7 @@ const Contact = () => {
           setLoading(false);
           console.error(error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          notify("Ahh, something went wrong ☹️. Please try again.");
         }
       );
   };
