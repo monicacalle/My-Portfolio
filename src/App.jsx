@@ -11,6 +11,7 @@ import {
 } from "./components";
 import { ToastContainer, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -42,6 +43,7 @@ const App = () => {
         <div className="relative z-0">
           <Contact />
           <StarsCanvas />
+          <Footer />
         </div>
       </div>
     </BrowserRouter>

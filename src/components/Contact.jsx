@@ -7,6 +7,8 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { Link } from "react-router-dom";
+import { github } from "../assets";
 
 const Contact = () => {
   const formRef = useRef();
@@ -84,7 +86,7 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className="flex-[0.75] bg-gray-950 p-8 rounded-2xl"
+        className="flex-[0.75] glass-bg-2 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>

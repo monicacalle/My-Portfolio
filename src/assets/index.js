@@ -33,6 +33,7 @@ import tripguide from "./tripguide.png";
 import iphone15 from "./iphone15.png";
 import teslo from "./teslo.png";
 import journalApp from "./journalApp.png";
+import linkedin from "./linkedin.png";
 
 export {
   logo,
@@ -67,4 +68,5 @@ export {
   iphone15,
   teslo,
   journalApp,
+  linkedin,
 };
