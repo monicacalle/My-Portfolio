@@ -14,7 +14,7 @@ const Footer = () => {
         </li>
         <li class="social-icon__item">
           <Link
-            to="www.linkedin.com/in/monica-calle-betancourt"
+            to="https://linkedin.com/in/monica-calle-betancourt"
             target="_blank"
           >
             <img
